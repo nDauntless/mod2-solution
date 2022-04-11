@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    
+}
+
+body header {
+    margin: 40px;
+    padding: 40px;
+    text-align: center;
+}
+
+section {
+    border: 2px solid black;
+}
+
+@media only screen and (min-width: 992px) {
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 40px;
+        margin: 40px;
+        gap: 30px;
+    }
+
+    .all-section {
+        background-color: grey;
+    }
+
+    .all-section p {
+        padding: 20px;
+        margin-top: 30px;
+    }
+    
+    .btn {
+        float: right;
+        margin-bottom: 50px;
+        border: 2px solid black;
+        color: black;
+        padding: 10px;
+        font-size: medium;
+        font-weight: 600;
+    }
+
+    #first .btn {
+        background-color: rgb(213,152,151);
+
+    }
+
+    #second .btn {
+        background-color: rgb(194,69,67);
+        color: white;
+    }
+
+    #third .btn {
+        background-color: rgb(230,210,152);
+    }
+
+
+   
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding: 40px;
+        margin: 40px;
+        gap: 30px;
+    }
+
+
+    .all-section {
+        background-color: grey;
+    }
+
+    .all-section p {
+        padding: 20px;
+        margin-top: 30px;
+    }
+    
+    .btn {
+        float: right;
+        margin-bottom: 50px;
+        border: 2px solid black;
+        color: black;
+        padding: 10px;
+        font-size: medium;
+        font-weight: 600;
+    }
+
+    #first .btn {
+        background-color: rgb(213,152,151);
+
+    }
+
+    #second .btn {
+        background-color: rgb(194,69,67);
+        color: white;
+    }
+
+    #third .btn {
+        background-color: rgb(230,210,152);
+    }
+    
+    #third {
+        grid-column: span 2;
+    }
+    
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        display: grid;
+        /* justify-content: space-between; */
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 3fr);
+        padding: 40px;
+        margin: 40px;
+        gap: 30px;
+    }
+
+    .all-section {
+        background-color: grey;
+        grid-column: span 2;
+    }
+
+    .all-section p {
+        padding: 20px;
+        margin-top: 30px;
+    }
+    
+    .btn {
+        float: right;
+        margin-bottom: 50px;
+        border: 2px solid black;
+        color: black;
+        padding: 10px;
+        font-size: medium;
+        font-weight: 600;
+    }
+
+    #first .btn {
+        background-color: rgb(213,152,151);
+
+    }
+
+    #second .btn {
+        background-color: rgb(194,69,67);
+        color: white;
+    }
+
+    #third .btn {
+        background-color: rgb(230,210,152);
+    }
+}
